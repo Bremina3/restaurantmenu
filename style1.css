@@ -4,19 +4,24 @@
 body {
   width: 900px;
   margin: 10px auto;
+  color:#690614;
+  background-color: #f5edee;
+  background-image: url(map-bg.jpg)
 }
 
 nav {
   font-family: sans-serif;
-  font-size: 10px;
+  font-size: 20px;
 }
 
-/* Use the 'Supermercado One' font at 45px (colored #5d4037) for the restaurant name. */
+/* Use the 'Supermercado One' font at 45px (colored #de1342) for the restaurant name. */
+header{ font-family:'Supermercado One'}
 
 /* Set the separator between the columns (the "column-rule") to be 2px dashed rosybrown. */
 main {
   columns: 400px 2;
   column-gap: 100px;
+  column-rule:2px dashed #e60505f7
 }
 
 section {
@@ -26,6 +31,8 @@ section {
 /* Show each of the section headings of the menu (e.g. "Starters") in small caps, colored #6d4c41. */
 h2 {
   margin: 0;
+color:#0b8c0d;
+font-variant: small-caps;
 }
 
 /* Make the name of each menu item appear in bold in a 20px size. */
@@ -33,6 +40,7 @@ h2 {
 dd {
   margin: 0 0 12px 0;
   display: flex;
+dt{font-size:20px;}
 }
 
 .details {
@@ -41,9 +49,12 @@ dd {
 
 /* Show the price of each item in a large font, in the color named 'firebrick' */
 .price {
-  order: 2;
-  padding-left: 10px;
+  padding-left:inherit;
+  color: firebrick;
+  font-size:large;
 }
+ 
+ 
 
 /* Draw a 2px dashed rosybrown border around the address/footer */
 address {
